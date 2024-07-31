@@ -47,10 +47,16 @@ nav a {
 }
 footer{
   background-color: #0F2454;
+  position: relative;
 }
 footer a i{
   background-color: #1288A2;
 }
 .foot-text{
   color: #1288A2 !important;
+}
+.up{
+  position: absolute;
+  right: 1%;
+  bottom: 10px;
 }
