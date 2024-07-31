@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Cambo&family=Fresca&family=Patrick+Hand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cambo&family=Fresca&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Patrick+Hand&display=swap");
+.ff-patrick {
+  font-family: "Patrick Hand", cursive;
+}
+.ff-lato {
+  font-family: "Lato", sans-serif;
+}
+/* nav-bar  */
+nav{
+    position: sticky !important;
+    top: 0;
+    z-index: 2;
+    opacity: 0.8;
+}
+
+.bg-nav {
+  background-color: white;
+}
+nav a {
+  color: black !important;
+}
+.nav-active,
+.nav-item a:hover {
+  text-decoration: underline;
+}
+/* carousel  */
+.carousel {
+  z-index: 1;
+}
+.carousel-item img {
+  width: 100%;
+}
+.carousel-title {
+  margin-bottom: 20%;
+}
+.carousel-box {
+  margin-bottom: 2%;
+}
+.home-img img:hover{
+  scale: 0.9;
+  transition: 0.6s;
+}
+.stat i:hover{
+  transform: rotateY(180deg);
+  transition: 0.6s;
+}
+footer{
+  background-color: #0F2454;
+}
+footer a i{
+  background-color: #1288A2;
+}
+.foot-text{
+  color: #1288A2 !important;
+}

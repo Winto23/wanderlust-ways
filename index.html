@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wanderlust Ways</title>
+    <link rel="icon" href="images/logo-black.png" />
+    <!-- css link  -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- bootstrap cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap icon link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- animate.css link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- font awsome link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- navigation-bar  -->
+    <nav class="navbar navbar-expand-lg bg-nav py-3">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand ff-lato animate__animated animate__lightSpeedInLeft animate__duration-3s"
+          href="./index.html"
+          ><i class="fa-solid fa-plane-departure me-2"></i>Wanderlust Ways</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link nav-active ff-lato"
+                aria-current="page"
+                href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ff-lato" href="tour.html">Tours</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ff-lato" href="destinations.html"
+                >Destination</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ff-lato" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ff-lato" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex ff-lato" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-dark ff-lato" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- carousel  -->
+    <div
+      id="slider"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#slider"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#slider"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#slider"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img
+            src="images/rome.jpg"
+            class="d-block img-fluid"
+            alt="banner-image"
+          />
+          <div
+            class="carousel-caption d-none d-md-block text-center carousel-title"
+          >
+            <p
+              style="letter-spacing: 10px; font-weight: bolder"
+              class="ff-patrick"
+            >
+              LETS TRAVEL THE WORLD WITH US
+            </p>
+            <h1
+              style="letter-spacing: 10px; font-weight: bolder"
+              class="ff-lato"
+            >
+              EXPLORE THE WORLD WITH WANDERLUST WAYS
+            </h1>
+          </div>
+          <!-- data box  -->
+          <div
+            class="container w-75 mx-auto d-none d-md-block carousel-caption carousel-box"
+            style="background-color: rgba(5, 5, 5, 0.6)"
+          >
+            <form>
+              <div class="row p-2">
+                <div class="col-md-4 box-data">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Where to?"
+                  />
+                </div>
+                <div class="dropdown col-md-4 box-data">
+                  <button
+                    class="btn form-control dropdown-toggle text-start ff-lato"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    style="color: black; background-color: white"
+                  >
+                    Destinations
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item ff-lato" href="#">Rome</a></li>
+                    <li>
+                      <a class="dropdown-item ff-lato" href="#">France</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item ff-lato" href="#">Maldives</a>
+                    </li>
+                    <li><a class="dropdown-item ff-lato" href="#">China</a></li>
+                    <li><a class="dropdown-item ff-lato" href="#">Italy</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown col-md-4 box-data">
+                  <button
+                    class="btn form-control dropdown-toggle text-start ff-lato"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    style="color: black; background-color: white"
+                  >
+                    Duration
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item ff-lato" href="#">1-3 days</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item ff-lato" href="#">3-7 days</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item ff-lato" href="#">15 days</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item ff-lato" href="#">1 month</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item ff-lato" href="#">3 months</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img
+            src="images/paris.jpg"
+            class="d-block img-fluid"
+            alt="banner-image"
+          />
+          <div
+            class="carousel-caption d-none d-md-block text-center carousel-title"
+          >
+            <p
+              style="letter-spacing: 10px; font-weight: bolder"
+              class="ff-patrick"
+            >
+              LETS TRAVEL THE WORLD WITH US
+            </p>
+            <h1
+              style="letter-spacing: 10px; font-weight: bolder"
+              class="ff-lato"
+            >
+              EXPLORE THE WORLD WITH WANDERLUST WAYS
+            </h1>
+          </div>
+          <!-- data box  -->
+          <div
+            class="container w-75 mx-auto d-none d-md-block carousel-caption carousel-box"
+            style="background-color: rgba(5, 5, 5, 0.6)"
+          >
+            <form>
+              <div class="row p-2">
+                <div class="col-md-4 box-data">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Where to?"
+                  />
+                </div>
+                <div class="dropdown col-md-4 box-data">
+                  <button
+                    class="btn form-control dropdown-toggle text-start ff-lato"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    style="color: black; background-color: white"
+                  >
+                    Destinations
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item ff-lato" href="#">Roma</a></li>
+                    <li>
+                      <a class="dropdown-item ff-lato" href="#">Milano</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item ff-lato" href="#">Maldives</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item ff-lato" href="#">Venice</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item ff-lato" href="#">Cannes</a>
+                    </li>
+                    <li><a class="dropdown-item ff-lato" href="#">Paris</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown col-md-4 box-data">
+                  <button
+                    class="btn form-control dropdown-toggle text-start ff-lato"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    style="color: black; background-color: white"
+                  >
+                    Duration
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item ff-lato" href="#">1-3 days</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item ff-lato" href="#">3-7 days</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item ff-lato" href="#">15 days</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item ff-lato" href="#">1 month</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item ff-lato" href="#">3 months</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img
+            src="images/maldives.jpg"
+            class="d-block img-fluid"
+            alt="banner-image"
+          />
+          <div
+            class="carousel-caption d-none d-md-block text-center carousel-title"
+          >
+            <p
+              style="letter-spacing: 10px; font-weight: bolder"
+              class="ff-patrick"
+            >
+              LETS TRAVEL THE WORLD WITH US
+            </p>
+            <h1
+              style="letter-spacing: 10px; font-weight: bolder"
+              class="ff-lato"
+            >
+              EXPLORE THE WORLD WITH WANDERLUST WAYS
+            </h1>
+          </div>
+          <!-- data box  -->
+          <div
+            class="container w-75 mx-auto d-none d-md-block carousel-caption carousel-box"
+            style="background-color: rgba(5, 5, 5, 0.6)"
+          >
+            <form>
+              <div class="row p-2">
+                <div class="col-md-4 box-data">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Where to?"
+                  />
+                </div>
+                <div class="dropdown col-md-4 box-data">
+                  <button
+                    class="btn form-control dropdown-toggle text-start ff-lato"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    style="color: black; background-color: white"
+                  >
+                    Destinations
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item ff-lato" href="#">Rome</a></li>
+                    <li>
+                      <a class="dropdown-item ff-lato" href="#">France</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item ff-lato" href="#">Maldives</a>
+                    </li>
+                    <li><a class="dropdown-item ff-lato" href="#">China</a></li>
+                    <li><a class="dropdown-item ff-lato" href="#">Italy</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown col-md-4 box-data">
+                  <button
+                    class="btn form-control dropdown-toggle text-start ff-lato"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    style="color: black; background-color: white"
+                  >
+                    Duration
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item ff-lato" href="#">1-3 days</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item ff-lato" href="#">3-7 days</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item ff-lato" href="#">15 days</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item ff-lato" href="#">1 month</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item ff-lato" href="#">3 months</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#slider"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#slider"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- content section  -->
+    <div class="container my-4" style="width: 90%">
+      <div class="row">
+        <div class="col-md-6 mt-5 text-center text-md-start">
+          <p
+            class="ff-lato text-info mt-4"
+            style="letter-spacing: 5px; font-weight: bolder"
+          >
+            THE BEST TRAVEL AGENCY
+          </p>
+          <h1 style="font-weight: bolder">
+            DISCOVER THE <span class="text-info">WORLD</span> WITH OUR GUIDE
+          </h1>
+          <p class="mb-4 text-secondary ff-lato">
+            Welcome to Wanderlust Ways, where your dream journeys come to life.
+            We specialize in crafting personalized travel experiences, from
+            relaxing beach getaways to adventurous treks and cultural
+            immersions. Our expert team ensures every detail is taken care of,
+            offering exceptional service and insider knowledge.
+          </p>
+          <p class="text-secondary ff-lato">
+            Here, we are dedicated to making your travel dreams a reality. Let
+            us handle the planning and logistics while you focus on creating
+            unforgettable memories. Start your next adventure with us today!
+          </p>
+          <ul class="list-unstyled">
+            <li class="ff-lato text-secondary my-2">
+              <i class="fa-solid fa-circle-check text-info me-2"></i>20 Years of
+              Experience
+            </li>
+            <li class="ff-lato text-secondary my-2">
+              <i class="fa-solid fa-circle-check text-info me-2"></i>150+ Tour
+              Destinations
+            </li>
+            <li class="ff-lato text-secondary my-2">
+              <i class="fa-solid fa-phone text-info me-2"></i>For Information:
+              <span class="text-info">855 333 4444</span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6 home-img text-center">
+          <img src="images/home1.png" class="img-fluid" alt="home-image" />
+        </div>
+      </div>
+    </div>
+    <!-- stat section  -->
+    <div class="container-fluid stat my-3">
+      <div class="row">
+        <div class="col-md-3 text-center">
+          <i
+            class="fa-solid fa-plane-departure bg-secondary rounded-5 p-3 text-dark"
+            style="font-size: 25px"
+          ></i>
+          <p class="ff-lato mt-1 text-dark">600 Flight Booking</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <i
+            class="fa-solid fa-briefcase bg-secondary rounded-5 p-3 text-dark"
+            style="font-size: 25px"
+          ></i>
+          <p class="ff-lato mt-1 text-dark">300 Amazing Tour</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <i
+            class="fa-solid fa-ship bg-secondary rounded-5 p-3 text-dark"
+            style="font-size: 25px"
+          ></i>
+          <p class="ff-lato mt-1 text-dark">100 Cruises booking</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <i
+            class="fa-solid fa-hotel bg-secondary rounded-5 p-3 text-dark"
+            style="font-size: 25px"
+          ></i>
+          <p class="ff-lato mt-1 text-dark">150 Hotel Booking</p>
+        </div>
+      </div>
+    </div>
+    <!-- footer section  -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 text-md-start text-center py-3">
+            <a
+              class="mb-4 text-decoration-none text-white fs-4"
+              href="index.html"
+              >Wanderlust Ways</a
+            >
+            <p class="ff-lato text-white mt-3">
+              Discover the world with Wanderlust Ways - your adventure starts
+              here. Let us turn your travel dreams into reality with
+              personalized journeys and unforgettable experiences.
+            </p>
+            <a href="#"
+              ><i
+                class="fa-brands fa-facebook p-3 rounded-5 text-white me-2"
+              ></i
+            ></a>
+            <a href="#"
+              ><i
+                class="fa-brands fa-x-twitter p-3 rounded-5 text-white me-2"
+              ></i
+            ></a>
+            <a href="#"
+              ><i
+                class="fa-brands fa-instagram p-3 rounded-5 text-white me-2"
+              ></i
+            ></a>
+            <a href="#"
+              ><i
+                class="fa-regular fa-envelope p-3 rounded-5 text-white me-2"
+              ></i
+            ></a>
+          </div>
+          <div class="col-md-4 text-md-start text-center">
+            <p class="ff-lato text-white text-center mt-4 fs-4">Quick links</p>
+            <ul class="text-white text-center list-unstyled">
+              <li>
+                <a class="text-decoration-none text-white" href="tour.html"
+                  >Tour</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-decoration-none text-white"
+                  href="destinations.html"
+                  >Destinations</a
+                >
+              </li>
+              <li>
+                <a class="text-decoration-none text-white" href="about.html"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a class="text-decoration-none text-white" href="contact.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 text-md-start text-center">
+            <p class="text-white mt-4 fs-4 text-center ff-lato">Subscribe</p>
+            <p class="text-white ff-lato">
+              Sign up for our monthly blogletter to stay informed about travel
+              and tours
+            </p>
+            <input
+              type="email"
+              class="form-control rounded-0 py-2 w-75 d-inline"
+              placeholder="Enter your email here"
+            />
+            <button class="btn btn-light ms-2 ff-lato">Send</button>
+          </div>
+        </div>
+        <div class="row text-md-start text-center">
+          <p class="text-white mt-2">
+            ©2024 <span class="foot-text">Wanderlust Ways</span>. All rights
+            reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- bootstrap js link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
