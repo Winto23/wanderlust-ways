@@ -88,8 +88,8 @@ footer a i{
   position: relative;
 }
 .destination:hover {
-  scale: 1.1;
-  transition: 0.6s;
+  scale: 1.05;
+  transition: 0.5s;
 }
 .d-info{
   position: absolute;
