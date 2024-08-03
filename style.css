@@ -143,4 +143,8 @@ footer a i{
 .info-text i{
   cursor: pointer;
 }
+.msg-box{
+  border: 1px solid #1288A2;
+  border-radius: 8px;
+}
  
