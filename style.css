@@ -127,7 +127,7 @@ footer a i{
   transition: 1s;
 }
 .info-text{
-  margin-top: 45%;
+  margin-top: 35%;
   visibility: hidden;
 }
 .guide:hover .guide-info{
