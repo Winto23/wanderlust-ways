@@ -120,8 +120,8 @@ footer a i{
   background-color: #2095AE;
   position: absolute;
   bottom: 100;
-  left: 3%;
-  right: 3%;
+  left: 0;
+  right: 0;
   height: 0;
   overflow: hidden;
   transition: 1s;
@@ -133,8 +133,8 @@ footer a i{
 .guide:hover .guide-info{
   height: 100%;
   bottom: 0;
-  left: 3%;
-  right: 3%;
+  left: 0;
+  right: 0;
   background-color: #2094aedb;
 }
 .guide:hover .info-text{
