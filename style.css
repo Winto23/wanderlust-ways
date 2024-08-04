@@ -119,7 +119,7 @@ footer a i{
 .guide-info{
   background-color: #2095AE;
   position: absolute;
-  bottom: 100;
+  bottom: 0;
   left: 0;
   right: 0;
   height: 0;
@@ -147,4 +147,3 @@ footer a i{
   border: 1px solid #1288A2;
   border-radius: 8px;
 }
- 
