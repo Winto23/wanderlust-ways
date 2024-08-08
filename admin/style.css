@@ -9,6 +9,9 @@
 nav {
   cursor: pointer;
 }
+.left-nav{
+  background-color:#202531;
+}
 .theme ul li {
   border: 1px solid #202531;
 }
