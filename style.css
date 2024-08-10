@@ -20,9 +20,8 @@ nav{
 nav a {
   color: black !important;
 }
-.nav-active,
-.nav-item a:hover {
-  text-decoration: underline;
+.nav-active,.nav-item a:hover {
+  text-decoration: underline !important;
 }
 /* carousel  */
 .carousel {
